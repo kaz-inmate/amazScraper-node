@@ -9,6 +9,7 @@
   "author": "Prateek Sapkota",
   "license": "ISC",
   "dependencies": {
+    "json2xls": "^0.1.2",
     "puppeteer": "^3.3.0"
   }
 }

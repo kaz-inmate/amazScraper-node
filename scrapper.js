@@ -8,9 +8,7 @@ module.exports.getData = async (url, cb) => {
         await page.goto(url, {waitUntil: "domcontentloaded"});
       
         const result = await page.evaluate((info) => {
-            let data = {
-                cat: []
-            }
+            let data = []
 
         let categories = Array.from(document.querySelector('.nav-search-dropdown').options);
         categories.forEach(el => {
@@ -18,7 +16,7 @@ module.exports.getData = async (url, cb) => {
                 text: el.text,
                 link : info.mainUrl + el.getAttribute('value').replace('=', '%3D') + info.sideUrl
             }
-               data.cat.push(obj);
+               data.push(obj);
             });
             return data;
         }, info);

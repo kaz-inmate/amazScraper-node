@@ -1,0 +1,14 @@
+{
+  "name": "webscraping",
+  "version": "1.0.0",
+  "description": "A webscraper",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Prateek Sapkota",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^3.3.0"
+  }
+}
